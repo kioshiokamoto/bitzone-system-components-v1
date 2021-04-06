@@ -1,5 +1,5 @@
 import Filter from "./components/Filter";
-
+//import {Button} from './components'
 import './app.css'
 import { useState } from "react";
 function App() {
@@ -10,7 +10,7 @@ function App() {
 
   return(
     <div className="containerFilter">
-      <Filter name="Filtro" overflow="scroll" isVisible={isVisible} setIsVisible={setIsVisible}>
+      <Filter name="Filtro"  overflow="scroll" isVisible={isVisible} setIsVisible={setIsVisible}>
         <h3>Estado</h3>
         <h3>Estado</h3>
         <h3>Estado</h3>
@@ -33,19 +33,9 @@ function App() {
         <h3>Estado</h3>
         <h3>Estado</h3>
         <h3>Estado</h3>
-        <h3>Estado</h3>
-        <h3>Estado</h3>
-        <h3>Estado</h3>
-        <h3>Estado</h3>
-        <h3>Estado</h3>
-        <h3>Estado</h3>
-        <h3>Estado</h3>
-        <h3>Estado</h3>
-        <h3>Estado</h3>
-        <h3>Estado</h3>
-        <h3>Estado</h3>
-        <h3>Estado</h3>
+        
       </Filter>
+     
     </div>
   )
 

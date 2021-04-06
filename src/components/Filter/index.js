@@ -29,7 +29,7 @@ const Filter = ({ children, name, ButtonFilter, isVisible,setIsVisible, ...props
   return (
     <FilterContainer>
       {ButtonFilter ? (
-        <ButtonFilter onClick={handleFilter}>{name}</ButtonFilter>
+        <ButtonFilter {...props} onClick={handleFilter}>{name}</ButtonFilter>
       ) : (
         <button onClick={handleFilter}>{name}</button>
       )}
