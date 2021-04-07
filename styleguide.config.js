@@ -26,6 +26,7 @@ module.exports = {
     {
       name: 'Componentes UI',
       components: [
+        'src/components/**/*.tsx',
         'src/components/Button/[A-Z]*.js',
         'src/components/Modal/Modal.js',
         'src/components/Spinner/Spinner.js',
@@ -34,7 +35,6 @@ module.exports = {
         'src/components/Drawer/[A-Z]*.js',
         'src/components/Input/[A-Z]*.js',
         'src/components/Skeleton/[A-Z]*.js',
-        'src/components/**/*.tsx',
       ],
       sectionDepth: 2,
     },
