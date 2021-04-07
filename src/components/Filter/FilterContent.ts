@@ -1,13 +1,12 @@
 import styled from 'styled-components';
-//import * as PropTypes from 'prop-types';
 
 interface FilterContentProps{
-  visible?: 'block'|'none',
-  bottom?: Number,
-  right?: Number,
-  width?: Number,
-  height?:Number,
-  overflow:'scroll'|'hidden'|'auto'|'visible'
+  visible?: boolean,
+  bottom?: number,
+  right?: number,
+  width?: number,
+  height?:number,
+  overflow?:'scroll'|'hidden'|'auto'|'visible'
 }
 
 export const FilterContent = styled.div<FilterContentProps>`
@@ -29,8 +28,10 @@ export const FilterContent = styled.div<FilterContentProps>`
   overflow:${props => props.overflow ? props.overflow : 'hidden'};
   
 `;
+
+
 FilterContent.defaultProps={
-  visible: 'none',
+  visible: false,
   bottom: 0,
   right: 0,
   width: 500,
